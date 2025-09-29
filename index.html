@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafaela Print - Aplikasi Manajemen</title>
+
+    <link rel="manifest" id="manifest-link">
+    <meta name="theme-color" content="#1f2937">
+    <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAXVBMVEX////AAD/Lyz/AAD/Pj7/ERH/ICD/yMj/UVH/mJj/Zmb/paX/dnb/X1//srL/h4f/fn7/1tb/zs7/o6P/TU3/Kir/rq7/bGz/SEj/QED/ubn/n5//eXn/ior/LS2rQk22AAACwElEQVR4nO3c63KqMBRAYYIAgiCoqKj6/s85bY4txVmLmG2n3V96DgaTjMkEk2YDAAAAAAAAAAAAAAAAAAAAAAAAYCnpvC/tY60NW9lP2tsA1Rba63B9QBO0n0EP8O1W2g+6g6A1X+rQGgMo/bi2D+0YQK0f1g7tDYBaP6wZ2hOAmn/sHbofAK3+sWnofgDU+seood8JoNaP6IbeC0Ctf0QG+l4AVv9wQ99HAKz+4YZ+CIC1f2i236sFrP6h2X4tAOv90W6/dgDW+6Pdfg4A6/3Rbr8EgPX+aLcfAkD7R7v9GgDaP9rtNwDQ/tFuvwSA9g9s+zUA1P7Btj8EgPYPbPsNAFT7B9v+EwDaP7DtVwDQ/oFtfwUA7R/Y9msAaP/Atj8EgPYPbPsNAFT7B9v+EwDaP7DtVwDQ/oFtfwUA7R/Y9msAaP/Atj8EgPYPbPsNAFT7B9v+EwDaP7DtVwDQ/oFtfwUA7R/Y9msAaP/Atj8EgPYPbPsNAFT7B9v+EwDaP7DtVwDQ/oFtfwUA7R/Y9msAaP/Atj8EgPYPbPsNAFT7B9v+EwDaP7DtVwDQ/oFtfwUA7R/Y9msAaP/Atj8EgPYPbPsNAFT7B9v+EwDaP7DtVwDQ/oFtfwUA7R/Y9msAaP/Atj8EgPYPbPsNAFT7B9v+EwDaP7DtVwDQ/oFtfwUA7R/Y9msAaP/Atj8EgPYPbPsNAFT7B9v+EwDaP7DtVwDQ/oFtfwUA7R/Y9msA6/2h3X45AOv9od1+DQDvD+32eQE4D9rtNwDndrv9GgDOrXb7xQBkbrfbLwUg4127/ZoAyLh2+6UAyLh2+6UAqLqj234dAKru6LYfA0DVHdrthyYgy/qP2u2XBiDr/qPb/h4A6f/Ibb8GgPQ/ctu/AVB+R7f9GgDq7uienwGo+6P3AdB+gLz/T6T9I+2vP9kHAAAAAAAAAAAAAAAAAAAAAAA43T/p0sS+v4nO6gAAAABJRU5ErkJggg==">
+    <link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAXVBMVEX////AAD/Lyz/AAD/Pj7/ERH/ICD/yMj/UVH/mJj/Zmb/paX/dnb/X1//srL/h4f/fn7/1tb/zs7/o6P/TU3/Kir/rq7/bGz/SEj/QED/ubn/n5//eXn/ior/LS2rQk22AAACwElEQVR4nO3c63KqMBRAYYIAgiCoqKj6/s85bY4txVmLmG2n3V96DgaTjMkEk2YDAAAAAAAAAAAAAAAAAAAAAAAAYCnpvC/tY60NW9lP2tsA1Rba63B9QBO0n0EP8O1W2g+6g6A1X+rQGgMo/bi2D+0YQK0f1g7tDYBaP6wZ2hOAmn/sHbofAK3+sWnofgDU+seood8JoNaP6IbeC0Ctf0QG+l4AVv9wQ99HAKz+4YZ+CIC1f2i236sFrP6h2X4tAOv90W6/dgDW+6Pdfg4A6/3Rbr8EgPX+aLcfAkD7R7v9GgDaP9rtNwDQ/tFuvwSA9g9s+zUA1P7Btj8EgPYPbPsNAFT7B9v+EwDaP7DtVwDQ/oFtfwUA7R/Y9msAaP/Atj8EgPYPbPsNAFT7B9v+EwDaP7DtVwDQ/oFtfwUA7R/Y9msAaP/Atj8EgPYPbPsNAFT7B9v+EwDaP7DtVwDQ/oFtfwUA7R/Y9msAaP/Atj8EgPYPbPsNAFT7B9v+EwDaP7DtVwDQ/oFtfwUA7R/Y9msAaP/Atj8EgPYPbPsNAFT7B9v+EwDaP7DtVwDQ/oFtfwUA7R/Y9msAaP/Atj8EgPYPbPsNAFT7B9v+EwDaP7DtVwDQ/oFtfwUA7R/Y9msAaP/Atj8EgPYPbPsNAFT7B9v+EwDaP7DtVwDQ/oFtfwUA7R/Y9msA6/2h3X45AOv9od1+DQDvD+32eQE4D9rtNwDndrv9GgDOrXb7xQBkbrfbLwUg4127/ZoAyLh2+6UAyLh2+6UAqLqj234dAKru6LYfA0DVHdrthyYgy/qP2u2XBiDr/qPb/h4A6f/Ibb8GgPQ/ctu/AVB+R7f9GgDq7uienwGo+6P3AdB+gLz/T6T9I+2vP9kHAAAAAAAAAAAAAAAAAAAAAAA43T/p0sS+v4nO6gAAAABJRU5ErkJggg==">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/"
+  }
+}
+</script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+</body>
+</html>
